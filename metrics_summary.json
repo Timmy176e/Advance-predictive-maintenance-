@@ -1,0 +1,129 @@
+{
+  "maintenance_type_classifier": {
+    "accuracy": 0.8957,
+    "macro_f1": 0.7793,
+    "labels": [
+      "Corrective",
+      "Predictive",
+      "Preventive"
+    ],
+    "confusion_matrix": [
+      [
+        9,
+        11,
+        0
+      ],
+      [
+        4,
+        130,
+        20
+      ],
+      [
+        0,
+        11,
+        256
+      ]
+    ]
+  },
+  "failure_risk_regressor": {
+    "mae": 0.0274,
+    "rmse": 0.0341,
+    "r2": 0.9675
+  },
+  "rul_regressor": {
+    "mae": 2.7616,
+    "rmse": 4.117,
+    "r2": 0.9538
+  },
+  "days_until_due_regressor": {
+    "mae": 2.1651,
+    "rmse": 3.3398,
+    "r2": 0.8762
+  },
+  "feature_importance": {
+    "maintenance_type_classifier": [
+      [
+        "degradation_index",
+        0.4659
+      ],
+      [
+        "days_since_last_maintenance",
+        0.2168
+      ],
+      [
+        "downtime_minutes_last_90d",
+        0.0822
+      ],
+      [
+        "fault_count_last_90d",
+        0.0683
+      ],
+      [
+        "age_days",
+        0.0473
+      ],
+      [
+        "comp_type_Packaging",
+        0.0176
+      ],
+      [
+        "section_Packaging",
+        0.0171
+      ],
+      [
+        "fault_count_last_30d",
+        0.0148
+      ],
+      [
+        "last_maintenance_type_Corrective",
+        0.0085
+      ],
+      [
+        "line_3",
+        0.0072
+      ]
+    ],
+    "failure_risk_regressor": [
+      [
+        "degradation_index",
+        0.8561
+      ],
+      [
+        "fault_count_last_90d",
+        0.0693
+      ],
+      [
+        "days_since_last_maintenance",
+        0.0378
+      ],
+      [
+        "fault_count_last_30d",
+        0.012
+      ],
+      [
+        "downtime_minutes_last_90d",
+        0.0103
+      ],
+      [
+        "age_days",
+        0.0069
+      ],
+      [
+        "last_maintenance_type_Preventive",
+        0.0008
+      ],
+      [
+        "line_2",
+        0.0008
+      ],
+      [
+        "line_1",
+        0.0007
+      ],
+      [
+        "last_maintenance_type_Corrective",
+        0.0007
+      ]
+    ]
+  }
+}

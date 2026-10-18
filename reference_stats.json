@@ -1,0 +1,122 @@
+{
+  "generated_from": "maintenance_prediction_dataset.csv",
+  "n_train_rows": 3294,
+  "train_date_range": [
+    "2021-10-31",
+    "2026-03-31"
+  ],
+  "numeric_features": [
+    "age_days",
+    "fault_count_last_30d",
+    "fault_count_last_90d",
+    "downtime_minutes_last_90d",
+    "days_since_last_maintenance",
+    "degradation_index"
+  ],
+  "categorical_features": [
+    "comp_type",
+    "section",
+    "last_maintenance_type",
+    "line"
+  ],
+  "numeric_stats": {
+    "age_days": {
+      "min": 71.0,
+      "p01": 211.0,
+      "p50": 1339.0,
+      "p99": 2470.0,
+      "max": 2697.0,
+      "mean": 1338.6472,
+      "std": 554.283
+    },
+    "fault_count_last_30d": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p50": 0.0,
+      "p99": 2.0,
+      "max": 2.0,
+      "mean": 0.439,
+      "std": 0.5486
+    },
+    "fault_count_last_90d": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p50": 1.0,
+      "p99": 4.0,
+      "max": 5.0,
+      "mean": 1.2845,
+      "std": 1.299
+    },
+    "downtime_minutes_last_90d": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p50": 22.0,
+      "p99": 252.28,
+      "max": 388.0,
+      "mean": 49.3591,
+      "std": 63.4058
+    },
+    "days_since_last_maintenance": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p50": 11.0,
+      "p99": 53.07,
+      "max": 114.0,
+      "mean": 12.9529,
+      "std": 10.9339
+    },
+    "degradation_index": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p50": 0.42,
+      "p99": 1.0441,
+      "max": 1.146,
+      "mean": 0.4488,
+      "std": 0.2577
+    }
+  },
+  "categorical_values": {
+    "comp_type": [
+      "Forming",
+      "Mixer",
+      "Oven",
+      "Packaging",
+      "Palletizer"
+    ],
+    "section": [
+      "Manufacturing",
+      "Mixing",
+      "Oven",
+      "Packaging",
+      "Palletizing"
+    ],
+    "last_maintenance_type": [
+      "Corrective",
+      "Install",
+      "Preventive"
+    ],
+    "line": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  "classifier_classes": [
+    "Corrective",
+    "Predictive",
+    "Preventive"
+  ],
+  "target_ranges": {
+    "failure_risk_score": [
+      0.0,
+      1.0
+    ],
+    "remaining_useful_life_days": [
+      0,
+      151
+    ]
+  }
+}
